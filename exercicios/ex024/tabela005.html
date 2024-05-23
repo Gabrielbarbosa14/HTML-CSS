@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .destaque{
+            background-color: aquamarine;
+        }
+
+        .cnome{
+            background-color: aquamarine;
+        }
+
+        .cgrupo{
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Sarah</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Torcida Organizada</td>
+        </tr>
+
+        <tr>
+            <td>Joana</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Corretora de imóveis</td>
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Eletricista</td>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Pedreiro</td>
+        </tr>
+    </table>
+</body>
+</html>
